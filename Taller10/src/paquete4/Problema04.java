@@ -28,7 +28,8 @@ public class Problema04 {
 
         for (int i = 0; i < datos.length; i++) {
             for (int j = 0; j < datos[i].length; j++) {
-                System.out.println("El numero [" + i + "] es: " + datos[i][j]);
+                System.out.println("El numero [" + i + "]" + "[" + j + "]  es: " 
+                        + datos[i][j]);
 
             }
         }

@@ -17,23 +17,33 @@ public class Problema02 {
 
         Scanner entrada = new Scanner(System.in);
 
-        double[][] datos = new double[2][2];
-        System.out.println("Ingrese datos decimales");
-        
+        String[] vendedores = new String[2];
+        double[][] ventas = new double[2][5];
+        double suma = 0;
+        String reporte = "";
+       
 
-        for (int i = 0; i < datos.length; i++) {
-            for (int j = 0; j < datos[i].length; j++) {
-                System.out.print("Ingrese[" + i + "]" + "[" + j + "]=");
-                datos[i][j] = entrada.nextDouble();
-
-            }
+        for (int i = 0; i < vendedores.length; i++) {
+            System.out.println("Ingrese el nombre del " + i + " vendedor: ");
+            vendedores[i] = entrada.nextLine();
+            reporte = String.format("%sVendedor(a) %s\n",
+                    reporte,
+                    vendedores[i]);
         }
 
-        for (int i = 0; i < datos.length; i++) {
-            for (int j = 0; j < datos[i].length; j++) {
-                System.out.println("El numero [" + i + "] es: " + datos[i][j]);
+        for (int i = 0; i < ventas.length; i++) {
+            for (int j = 0; j < ventas[i].length; j++) {
+                System.out.println("Ingresa las ventas del dia "+ vendedores[i] +"[" + i + "]"
+                        + "[" + j + "]" + " :");
+                ventas[i][j] = entrada.nextDouble();
+                suma = suma + ventas[i][j];
 
             }
+
         }
+        System.out.printf("%sHa realizado un total de %.2f en ventas\n"
+                , reporte
+                , suma);
+
     }
 }
