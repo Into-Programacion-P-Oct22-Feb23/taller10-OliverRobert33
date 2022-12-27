@@ -6,8 +6,8 @@
 package paquete4;
 import java.util.Scanner;
 /**
- *
- * @author reroes
+
+ * @author Oliver Saraguro
  */
 public class Problema04 {
     

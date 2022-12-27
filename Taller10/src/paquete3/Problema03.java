@@ -7,7 +7,7 @@ package paquete3;
 
 /**
  *
- * @author reroes
+ * @author Oliver Saraguro
  */
 public class Problema03 {
 
