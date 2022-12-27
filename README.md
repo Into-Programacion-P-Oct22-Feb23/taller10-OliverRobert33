@@ -1,4 +1,4 @@
-# Taller 10 (Laboratorio): 
+# Taller 10 (Laboratorio): Oliver Saraguro
 ## Construcción de programas usando arreglos bidimensionales
 
 * Lenguaje de programación : Java
